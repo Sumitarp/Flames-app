@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flames App</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logo -->
+    <img src="logo.png" alt="FLAMES Logo" class="logo animated-logo">
+
+    <h1>FLAMES</h1>
+
+    <p id="modeInfo">Fun Mode: What most people remember</p>
+
+    <div class="mode-buttons">
+        <button onclick="setMode('quick')" id="quickBtn" class="active">Fun ⚡</button>
+        <button onclick="setMode('real')" id="realBtn">True 🔥</button>
+    </div>
+
+    <div class="inputs">
+        <input type="text" id="name1" placeholder="Your Name">
+        <input type="text" id="name2" placeholder="Partner Name">
+    </div>
+
+    <button class="main-btn" onclick="calculateFlames()">Check Compatibility</button>
+
+    <div id="shareCard" class="share-card">
+        <div class="share-title">FLAMES</div>
+        <div class="share-names" id="shareNames"></div>
+        <div class="share-result" id="shareResult"></div>
+        <div class="share-sub" id="shareSub"></div>
+    <div class="share-footer">Try this yourself and see what you get!</div>
+    </div>
+
+    <button class="share-btn" onclick="downloadResultImage()">
+        Download
+    </button>
+
+    <button id="shareBtn" class="share-btn" onclick="shareWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i>
+        Share on WhatsApp
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
