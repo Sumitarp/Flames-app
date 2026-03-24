@@ -192,7 +192,7 @@ function shareWhatsApp() {
         link.click();
 
         // Then open WhatsApp
-        const message = "I got this result on FLAMES for us. Try it yourself and see what you get!\n\nhttps://flames-calculator.vercel.app/";
+        const message = "I got this result on FLAMES for us. Try it yourself and see what you get!\n\nhttps://sumitarp.github.io/Flames-app/";
         const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
 
         window.open(url, "_blank");
